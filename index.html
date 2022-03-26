@@ -1,0 +1,318 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LazilyCat的小窝 - 个人博客</title><meta name="author" content="LazilyCat"><meta name="copyright" content="LazilyCat"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="欢迎来到LazilyCat的小窝">
+<meta property="og:type" content="website">
+<meta property="og:title" content="LazilyCat的小窝">
+<meta property="og:url" content="https://lazilycat.github.io/index.html">
+<meta property="og:site_name" content="LazilyCat的小窝">
+<meta property="og:description" content="欢迎来到LazilyCat的小窝">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://lazilycat.github.io/media/avatar.jpg">
+<meta property="article:author" content="LazilyCat">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://lazilycat.github.io/media/avatar.jpg"><link rel="shortcut icon" href="/media/favicon.png"><link rel="canonical" href="https://lazilycat.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'LazilyCat的小窝',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-03-26 19:15:29'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    document.addEventListener('pjax:complete', detectApple)})(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/media/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 目录</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 传送门</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/media/bg.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">LazilyCat的小窝</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 目录</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 传送门</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">LazilyCat的小窝</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/LazilyCat" target="_blank" title="Follow me on GitHub"><i class="fab fa-github"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1467596498&amp;site=qq&amp;menu=yes" target="_blank" title="Add qq to 1467596498"><i class="fab fa-qq"></i></a><a class="social-icon" href="mailto:LazilyCat@outlook.com" target="_blank" title="Email to LazilyCat@outlook.com"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/media/LSJHWC.jpg" target="_blank" title="Add WeChat to LSJHWC"><i class="fab fa-weixin"></i></a><a class="social-icon" href="/media/wechat.jpg" target="_blank" title="Reward me"><i class="fas fa-comments-dollar"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/blog/wsa/" title="Windows11下运行安卓子系统">     <img class="post_bg" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/blog/wsa/cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Windows11下运行安卓子系统"></a></div><div class="recent-post-info"><a class="article-title" href="/blog/wsa/" title="Windows11下运行安卓子系统">Windows11下运行安卓子系统</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-10-23T13:00:00.000Z" title="发表于 2021-10-23 21:00:00">2021-10-23</time></span></div><div class="content">Windows Subsystem for Android™Windows11下的安卓子系统，目前2021/10/23该软件属于测试阶段，仅对beta聚到的美区Windows11用户开放，若您是beta聚到的用户且系统区域选中的是美国 可直接从微软商店进行下载。该系统内置了一个亚马逊应用商店，需要登陆亚马逊账号才能下载应用，且不支持国区亚马逊账号，目前仅支持美区亚马逊账号。考虑到国内的网络环境等因素，本期文章将会教大家如何 下载安装 安卓子系统 并使用ADB来安装酷安 并用酷安下载软件如果在微软商店里提示不满足要求或者无法下载，可以使用离线安装包进行安装。注：使用离线安装包不需要设置beta聚到和设置美区
+微软商店安装直接从微软商店安装，省时且省力。
+
+Win+i打开设置，选择 Windows更新 - Windows预览体验计划 - 链接账户 - Beta聚到
+Win+i打开设置，选择 时间和语言 - 语言&amp;区域 - 国家和地区，选择 美国
+打开微软商店，搜索Windows Subsystem for Android™ with Amazon Appstore，并点击安装。如果 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/blog/rev/" title="微信/QQ/TIM防撤回补丁">     <img class="post_bg" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/blog/rev/cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="微信/QQ/TIM防撤回补丁"></a></div><div class="recent-post-info"><a class="article-title" href="/blog/rev/" title="微信/QQ/TIM防撤回补丁">微信/QQ/TIM防撤回补丁</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-10-23T07:30:00.000Z" title="发表于 2021-10-23 15:30:00">2021-10-23</time></span></div><div class="content">RevokeMsgPatcher.v1.1本软件是Github上一位名叫huiyadanli的大佬开发的，目前软件更新到了v1.1的版本，软件支持微信、QQ、TIM以及QQ轻聊版防撤回功能，微信还加入了多开功能。
+目前防撤回支持版本
+使用方法打开软件，选择需要打补丁的软件，选中之后，会填充软件路径，确保需要打补丁软件没有运行，点击安装补丁点击安装补丁之后会提示安装完成，至此大功告成！*如果在聊天过程中，对方撤回消息，本地是不会看见对方撤回的，对方撤回的信息在本地看来是正常，但不会提示对方撤回了信息，所以有时候你不知道对方到底有没有撤回消息的。
+下载链接Github链接
+直接下载</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/blog/asd/" title="Minecraft阿斯顿服务器">     <img class="post_bg" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/blog/asd/%E4%BF%A1%E9%B8%BD%E7%8E%8B%E5%9B%BD.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Minecraft阿斯顿服务器"></a></div><div class="recent-post-info"><a class="article-title" href="/blog/asd/" title="Minecraft阿斯顿服务器">Minecraft阿斯顿服务器</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-10-17T06:00:00.000Z" title="发表于 2021-10-17 14:00:00">2021-10-17</time></span></div><div class="content">Minecraft 1.17.1 生存服务器阿斯顿大陆服务器服务器群号：1159213022（需要加群申请白名单具体操作）国内知名大型多人生存服务器，国际正版生存服务器，服务器需要正版账号进入非常欢迎大家来玩服务器，虽然不是我的服务器，但是我觉得这服务器挺好玩的，所以过来宣传一下如果您进入了服务器，没有找到合适的村子的话，非常建议您加入我所在的村子，羡宇岛
+
+服务器里的村子*以下所有村子的图片是几个月前拍的，现在的村子可能更好看*以下所有村子的图片无排序排序规则，无好坏之分
+羡宇岛
+蓝蓝村
+信鸽王国
+樱花镇
+时钟塔城
+凤城
+谅释道院
+绿竹阁
+清乐居
+时钟塔城
+新君士坦丁堡
+芝士村
+芝士湾
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/blog/wepe/" title="微PE工具箱V2.2更新内容">     <img class="post_bg" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/blog/wepe/cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="微PE工具箱V2.2更新内容"></a></div><div class="recent-post-info"><a class="article-title" href="/blog/wepe/" title="微PE工具箱V2.2更新内容">微PE工具箱V2.2更新内容</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-10-17T00:30:00.000Z" title="发表于 2021-10-17 08:30:00">2021-10-17</time></span></div><div class="content">微PE工具箱微PE工具箱主打“化简为繁 小材大用”的口号，至今已有14年的PE历史。微PE完全纯净，不会做出任何强制设置主页、强制捆绑安装软件的行为和其它各种类型的流氓行为。为大家带来纯粹的装机维护体验。我个人认为微PE目前已经非常完美，只不过相对于EdgelessPE和FriPE这一类比较新型的PE，微PE目前还不支持联网，也不支持插件
+微PE工具箱v2.2更新内容正式版更新日期：2021.10.08
+接用户反馈，我们在发布当天2021年10月8日19时左右对微PE工具箱2.2版本的64位做出了一次修正：1.我们已经修复了在一些新主机特别是平板上进PE黑屏的问题。这个问题很多Win10PE都存在，这次我们联合几位PE开发者大佬一起攻克了这个难题，建议所有PE开发者跟进此方案。2.顺便修正了CGI设置引导的工具、将64位Diskgenius更换为32位，以解决在64PE内使用的一些问题。
+新版本更换全新内核：
+
+该内核版本为10.19043.1165 ，来自8月更新的21H1。
+该内核支持更多新机型的启动。
+该内核已打VMD支持11代机器认硬盘。
+该内核已打大量笔记本触控板所需驱动。
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/blog/done/" title="欢迎文章">     <img class="post_bg" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/blog/done/cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="欢迎文章"></a></div><div class="recent-post-info"><a class="article-title" href="/blog/done/" title="欢迎文章">欢迎文章</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-10-16T10:30:00.000Z" title="发表于 2021-10-16 18:30:00">2021-10-16</time></span></div><div class="content">欢迎欢迎👏欢迎！👏热烈欢迎👏👏👏，欢迎来到LazilyCat的个人博客😊😁💕这里是我的个人博客，经过我耗费18000000毫秒(5小时)的搭建，我终于把我的个人博客给搭建了起来😃感谢Hexo博客模板的作者，本站采用Hexo博客模板，感谢大佬😘感谢国内外知名代码仓库托管平台GitHub &amp; GitHub Pages😘
+博客内容以后这个博客频道会更新一些科技相关的东西，介绍一些软件什么的，以后也会经常整活，欢迎大家多多关注我的博客🤣我也经常玩游戏，所以以后也会更新一些游戏相关的东西，欢迎大家找我打游戏awa😘
+
+
+联系方式你可以通过以下方式来认识我，闲着没事也可以来找我聊天awa😃
+QQ
+Bilibili
+Steam
+Afdian
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/media/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">LazilyCat</div><div class="author-info__description">欢迎来到LazilyCat的小窝</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://space.bilibili.com/385433304"><i class="fas fa-tv"></i><span>关注我！</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/LazilyCat" target="_blank" title="Follow me on GitHub"><i class="fab fa-github"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1467596498&amp;site=qq&amp;menu=yes" target="_blank" title="Add qq to 1467596498"><i class="fab fa-qq"></i></a><a class="social-icon" href="mailto:LazilyCat@outlook.com" target="_blank" title="Email to LazilyCat@outlook.com"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/media/LSJHWC.jpg" target="_blank" title="Add WeChat to LSJHWC"><i class="fab fa-weixin"></i></a><a class="social-icon" href="/media/wechat.jpg" target="_blank" title="Reward me"><i class="fas fa-comments-dollar"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">这里就是LazilyCat的小窝&个人博客啦！</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/blog/wsa/" title="Windows11下运行安卓子系统"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/blog/wsa/cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Windows11下运行安卓子系统"/></a><div class="content"><a class="title" href="/blog/wsa/" title="Windows11下运行安卓子系统">Windows11下运行安卓子系统</a><time datetime="2021-10-23T13:00:00.000Z" title="发表于 2021-10-23 21:00:00">2021-10-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/rev/" title="微信/QQ/TIM防撤回补丁"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/blog/rev/cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="微信/QQ/TIM防撤回补丁"/></a><div class="content"><a class="title" href="/blog/rev/" title="微信/QQ/TIM防撤回补丁">微信/QQ/TIM防撤回补丁</a><time datetime="2021-10-23T07:30:00.000Z" title="发表于 2021-10-23 15:30:00">2021-10-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/asd/" title="Minecraft阿斯顿服务器"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/blog/asd/%E4%BF%A1%E9%B8%BD%E7%8E%8B%E5%9B%BD.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Minecraft阿斯顿服务器"/></a><div class="content"><a class="title" href="/blog/asd/" title="Minecraft阿斯顿服务器">Minecraft阿斯顿服务器</a><time datetime="2021-10-17T06:00:00.000Z" title="发表于 2021-10-17 14:00:00">2021-10-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/wepe/" title="微PE工具箱V2.2更新内容"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/blog/wepe/cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="微PE工具箱V2.2更新内容"/></a><div class="content"><a class="title" href="/blog/wepe/" title="微PE工具箱V2.2更新内容">微PE工具箱V2.2更新内容</a><time datetime="2021-10-17T00:30:00.000Z" title="发表于 2021-10-17 08:30:00">2021-10-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/done/" title="欢迎文章"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/blog/done/cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="欢迎文章"/></a><div class="content"><a class="title" href="/blog/done/" title="欢迎文章">欢迎文章</a><time datetime="2021-10-16T10:30:00.000Z" title="发表于 2021-10-16 18:30:00">2021-10-16</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/10/"><span class="card-archive-list-date">十月 2021</span><span class="card-archive-list-count">5</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">5</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2021-10-15T16:00:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">2.4k</div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-03-26T11:15:29.775Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By LazilyCat</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    var typed = new Typed("#subtitle", {
+      strings: "知识来自实践。,Knowledge comes from experience alone.,世间无所谓天才，它仅是刻苦加勤奋。,There is no such thing as genius; it is nothing but labour and diligence.".split(","),
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = '知识来自实践。'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}</script><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      true && mermaid.init()
+    })
+  }
+}</script></div><div class="aplayer no-destroy" data-id="7675104902" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.removeEventListener('scroll', window.tocScrollFn)
+  window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script></div><script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2d_models/assets/wanko.model.json"},"display":{"position":"left","width":100,"height":150,"hOffset":-10,"vOffset":40},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body></html>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Windows11下运行安卓子系统</title>
+      <link href="/blog/wsa/"/>
+      <url>/blog/wsa/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Windows-Subsystem-for-Android™"><a href="#Windows-Subsystem-for-Android™" class="headerlink" title="Windows Subsystem for Android™"></a>Windows Subsystem for Android™</h1><p>Windows11下的安卓子系统，目前2021/10/23该软件属于测试阶段，仅对beta聚到的美区Windows11用户开放，<strong>若您是beta聚到的用户且系统区域选中的是美国 可直接从微软商店进行下载。</strong><br>该系统内置了一个亚马逊应用商店，需要登陆亚马逊账号才能下载应用，且不支持国区亚马逊账号，目前仅支持美区亚马逊账号。考虑到国内的网络环境等因素，本期文章将会教大家如何 下载安装 安卓子系统 并使用ADB来安装酷安 并用酷安下载软件<br>如果在微软商店里提示不满足要求或者无法下载，可以使用离线安装包进行安装。注：使用离线安装包不需要设置beta聚到和设置美区</p><h1 id="微软商店安装"><a href="#微软商店安装" class="headerlink" title="微软商店安装"></a>微软商店安装</h1><p>直接从微软商店安装，省时且省力。</p><ol><li>Win+i打开设置，选择 <strong>Windows更新</strong> - <strong>Windows预览体验计划</strong> - <strong>链接账户</strong> - <strong>Beta聚到</strong></li><li>Win+i打开设置，选择 <strong>时间和语言</strong> - <strong>语言&amp;区域</strong> - <strong>国家和地区</strong>，选择 <strong>美国</strong></li><li>打开微软商店，搜索<strong>Windows Subsystem for Android™ with Amazon Appstore</strong>，并点击安装。<br>如果搜索不到，可以<a href="https://www.microsoft.com/zh-cn/p/windows-subsystem-for-android/9p3395vx91nr?activetab=pivot:overviewtab">点击此处</a>打开网页版，在网页版点击安装会自动转到微软商店进行安装<br><img src="store.png" alt=""><h1 id="离线安装包安装"><a href="#离线安装包安装" class="headerlink" title="离线安装包安装"></a>离线安装包安装</h1></li><li>解压我准备的压缩包</li><li>点击Win键，搜索<strong>启用或关闭Windows功能</strong>并打开。<br>找到<strong>Hyper-v</strong>、<strong>Windows沙盒</strong>、<strong>Windows虚拟机监控程序平台</strong>、<strong>虚拟机平台</strong>并启用它们，然后等待安装并重启电脑</li><li>右键我准备的安装包 点击 复制文件地址。Win+x，点击 Windows终端(管理员) 并输入 ADD-appxpackage 文件地址（输入刚才复制的文件地址）记得回车确定<br><img src="add.png" alt=""><h1 id="启用并配置安卓子系统"><a href="#启用并配置安卓子系统" class="headerlink" title="启用并配置安卓子系统"></a>启用并配置安卓子系统</h1></li><li>安装完成之后，点击Win键，在 最近添加 里，会发现一个叫做Windows Subsystem for Android™的软件</li><li>如果是经常使用安卓子系统，可以在<strong>子系统资源</strong>里选择<strong>连续</strong>，这样打开的时候比较快，后台占用高。<br>如果不是经常使用安卓子系统，可以在<strong>子系统资源</strong>里选择<strong>按需要</strong>，这样打开的时候比较慢，后台占用低。</li><li>点击 文件 来打开一次安卓系统，确保他在后台运行。点击 开发人员选项 并点击下方IP的 刷新。<br><img src="st.png" alt=""><h1 id="ADB安装酷安"><a href="#ADB安装酷安" class="headerlink" title="ADB安装酷安"></a>ADB安装酷安</h1></li><li>解压Platform-Tools，进入到解压目录，在上方路径输入<strong>cmd</strong>回车打开。</li><li>在打开的窗口里输入 <strong>adb connect 127.0.0.1:58526</strong> 注：127.0.0.1:58526是开发者模式显示的默认IP地址，可能会不一样 请根据实际选择</li><li>复制酷安安装包的路径，并在cmd里输入 <strong>adb install “E:\云盘下载\kuan.apk”</strong> 注：”E:\云盘下载\kuan.apk”是我酷安安装包的地址，请根据实际更改</li><li>点击Win键，在 最近添加 里，找到 酷安 单击打开，就可以从酷安里面下载软件了<br><img src="in.png" alt=""><h1 id="从酷安安装软件"><a href="#从酷安安装软件" class="headerlink" title="从酷安安装软件"></a>从酷安安装软件</h1></li><li>点击上方搜索酷安，搜索要安装的软件</li><li>点击下载，在弹出的新窗口中点击安装</li><li>安装完成之后应用会在显示在开始菜单的 最近添加 里<br><img src="cs.png" alt=""><h1 id="网盘下载"><a href="#网盘下载" class="headerlink" title="网盘下载"></a>网盘下载</h1>链接：<a href="https://pan.baidu.com/s/1DtpKGiYvqCNZ_6FDWmhScQ">https://pan.baidu.com/s/1DtpKGiYvqCNZ_6FDWmhScQ</a><br>提取码：LCat<br>*目前阿里云盘暂不支持分享zip文件，实在是抱歉……</li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>微信/QQ/TIM防撤回补丁</title>
+      <link href="/blog/rev/"/>
+      <url>/blog/rev/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="RevokeMsgPatcher-v1-1"><a href="#RevokeMsgPatcher-v1-1" class="headerlink" title="RevokeMsgPatcher.v1.1"></a>RevokeMsgPatcher.v1.1</h1><p>本软件是Github上一位名叫huiyadanli的大佬开发的，目前软件更新到了v1.1的版本，软件支持<strong>微信、QQ、TIM以及QQ轻聊版</strong>防撤回功能，微信还加入了多开功能。</p><h1 id="目前防撤回支持版本"><a href="#目前防撤回支持版本" class="headerlink" title="目前防撤回支持版本"></a>目前防撤回支持版本</h1><p><img src="zcbb.png" alt=""></p><h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><p><strong>打开软件</strong>，<strong>选择需要打补丁的软件</strong>，选中之后，会填充软件路径，确保需要打补丁软件没有运行，点击<strong>安装补丁</strong><br><img src="weixin.png" alt=""><br>点击安装补丁之后会提示安装完成，至此大功告成！<br>*如果在聊天过程中，对方撤回消息，本地是不会看见对方撤回的，对方撤回的信息在本地看来是正常，但不会提示对方撤回了信息，所以有时候你不知道对方到底有没有撤回消息的。</p><h1 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h1><a class="btn-beautify button--animated " href="https://github.com/huiyadanli/RevokeMsgPatcher"   title="Github链接"><i class="fab fa-github"></i><span>Github链接</span></a><a class="btn-beautify button--animated " href="https://github-releases.githubusercontent.com/198071756/b3030652-33b4-4108-a7d5-48de04388081?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20211023%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211023T065326Z&X-Amz-Expires=300&X-Amz-Signature=81fef66998532f0a0aa713efefbea536bc0e531a8d4316c66fd92693d6c8ad1e&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=198071756&response-content-disposition=attachment%3B%20filename%3DRevokeMsgPatcher.v1.1.zip&response-content-type=application%2Foctet-stream"   title="直接下载"><i class="fas fa-download"></i><span>直接下载</span></a>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Minecraft阿斯顿服务器</title>
+      <link href="/blog/asd/"/>
+      <url>/blog/asd/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Minecraft-1-17-1-生存服务器"><a href="#Minecraft-1-17-1-生存服务器" class="headerlink" title="Minecraft 1.17.1 生存服务器"></a>Minecraft 1.17.1 生存服务器</h1><h2 id="阿斯顿大陆服务器"><a href="#阿斯顿大陆服务器" class="headerlink" title="阿斯顿大陆服务器"></a>阿斯顿大陆服务器</h2><p><strong>服务器群号：<a href="https://jq.qq.com/?_wv=1027&amp;k=5QFALm6g">1159213022</a>（需要加群申请白名单<a href="https://docs.qq.com/doc/DZmxyTGxtS3Vjd2hp">具体操作</a>）</strong><br><strong>国内知名大型多人生存服务器，国际正版生存服务器，服务器需要正版账号进入</strong><br><strong>非常欢迎大家来玩服务器，虽然不是我的服务器，但是我觉得这服务器挺好玩的，所以过来宣传一下</strong><br><strong>如果您进入了服务器，没有找到合适的村子的话，非常建议您加入我所在的村子，<a href="https://jq.qq.com/?_wv=1027&amp;k=24OB8yAn">羡宇岛</a></strong></p><hr><h1 id="服务器里的村子"><a href="#服务器里的村子" class="headerlink" title="服务器里的村子"></a>服务器里的村子</h1><p><strong>*以下所有村子的图片是几个月前拍的，现在的村子可能更好看</strong><br><strong>*以下所有村子的图片无排序排序规则，无好坏之分</strong></p><h2 id="羡宇岛"><a href="#羡宇岛" class="headerlink" title="羡宇岛"></a>羡宇岛</h2><p><img src="羡宇岛.png" alt=""></p><h2 id="蓝蓝村"><a href="#蓝蓝村" class="headerlink" title="蓝蓝村"></a>蓝蓝村</h2><p><img src="蓝蓝村.png" alt=""></p><h2 id="信鸽王国"><a href="#信鸽王国" class="headerlink" title="信鸽王国"></a>信鸽王国</h2><p><img src="信鸽王国.png" alt=""></p><h2 id="樱花镇"><a href="#樱花镇" class="headerlink" title="樱花镇"></a>樱花镇</h2><p><img src="樱花镇.png" alt=""></p><h2 id="时钟塔城"><a href="#时钟塔城" class="headerlink" title="时钟塔城"></a>时钟塔城</h2><p><img src="时钟塔城.png" alt=""></p><h2 id="凤城"><a href="#凤城" class="headerlink" title="凤城"></a>凤城</h2><p><img src="凤城.png" alt=""></p><h2 id="谅释道院"><a href="#谅释道院" class="headerlink" title="谅释道院"></a>谅释道院</h2><p><img src="谅释道院.png" alt=""></p><h2 id="绿竹阁"><a href="#绿竹阁" class="headerlink" title="绿竹阁"></a>绿竹阁</h2><p><img src="绿竹阁.png" alt=""></p><h2 id="清乐居"><a href="#清乐居" class="headerlink" title="清乐居"></a>清乐居</h2><p><img src="清乐居.png" alt=""></p><h2 id="时钟塔城-1"><a href="#时钟塔城-1" class="headerlink" title="时钟塔城"></a>时钟塔城</h2><p><img src="时钟塔城.png" alt=""></p><h2 id="新君士坦丁堡"><a href="#新君士坦丁堡" class="headerlink" title="新君士坦丁堡"></a>新君士坦丁堡</h2><p><img src="新君士坦丁堡.png" alt=""></p><h2 id="芝士村"><a href="#芝士村" class="headerlink" title="芝士村"></a>芝士村</h2><p><img src="芝士村.png" alt=""></p><h2 id="芝士湾"><a href="#芝士湾" class="headerlink" title="芝士湾"></a>芝士湾</h2><p><img src="芝士湾.png" alt=""></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>微PE工具箱V2.2更新内容</title>
+      <link href="/blog/wepe/"/>
+      <url>/blog/wepe/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="微PE工具箱"><a href="#微PE工具箱" class="headerlink" title="微PE工具箱"></a>微PE工具箱</h1><p>微PE工具箱主打“化简为繁 小材大用”的口号，至今已有14年的PE历史。<br>微PE完全纯净，不会做出任何强制设置主页、强制捆绑安装软件的行为和其它各种类型的流氓行为。为大家带来纯粹的装机维护体验。<br>我个人认为微PE目前已经非常完美，只不过相对于EdgelessPE和FriPE这一类比较新型的PE，微PE目前还不支持联网，也不支持插件</p><h1 id="微PE工具箱v2-2更新内容"><a href="#微PE工具箱v2-2更新内容" class="headerlink" title="微PE工具箱v2.2更新内容"></a>微PE工具箱v2.2更新内容</h1><p>正式版更新日期：2021.10.08</p><p>接用户反馈，我们在发布当天2021年10月8日19时左右对微PE工具箱2.2版本的64位做出了一次修正：<br>1.我们已经修复了在一些新主机特别是平板上进PE黑屏的问题。这个问题很多Win10PE都存在，这次我们联合几位PE开发者大佬一起攻克了这个难题，建议所有PE开发者跟进此方案。<br>2.顺便修正了CGI设置引导的工具、将64位Diskgenius更换为32位，以解决在64PE内使用的一些问题。</p><p>新版本更换全新内核：</p><ol><li>该内核版本为10.19043.1165 ，来自8月更新的21H1。</li><li>该内核支持更多新机型的启动。</li><li>该内核已打VMD支持11代机器认硬盘。</li><li>该内核已打大量笔记本触控板所需驱动。</li><li>该内核已直接支持绕过TPM2.0安装原版Windows11镜像。</li><li>同时提供64和32位PE内核，64位内核带工具218MB，32位带工具177MB，这应该是最后一次的32内核PE。</li></ol><p>软件部分更新：</p><ol><li>更新分区助手到9.1版本。</li><li>更新Diskgenius到5.4.2.1239版本。</li><li>更新Dism++到10.1.1002.10版本。</li><li>更新WinNTSetup到64位5.0版本，32位为4.2.5。</li><li>更新CGI工具的Wimlib版本 到1.13.4版本。</li><li>更新CPUZ到1.97版本。</li><li>更新7ZIP到21.03 Beta版本。</li><li>全新制作Ghost备份还原小工具，支持GPT分区表。</li></ol><p>安装包部分更新：</p><ol><li>放开被识别为移动硬盘的U盘，以“U盘”安装方式格式化安装。</li><li>提升在WIN10、WIN11下制作U盘启动的成功率。</li></ol><p>感谢您对微PE工具箱的支持！<br>全新内核，可多多尝试，意见和建议可反馈至官方邮箱：mail@wepe.com.cn</p><h1 id="微PE安装Windows11绕过TPM2-0"><a href="#微PE安装Windows11绕过TPM2-0" class="headerlink" title="微PE安装Windows11绕过TPM2.0"></a>微PE安装Windows11绕过TPM2.0</h1><p>微PE工具箱v2.2目前现已支持绕过Win11需要的TPM2.0</p><ol><li>通过装载Win11镜像，双击镜像里的setup.exe来进行安装Win11，可以直接使用官方的安装方法。</li><li>直接使用NTsetup安装，虽然可以安装，但方法1更方便，而且NTsetup安装的方法在v2.1的版本就支持了<br>*通过这种安装方法并不会提示不满最低要求</li></ol><hr><h1 id="其他我认为好用的PE"><a href="#其他我认为好用的PE" class="headerlink" title="其他我认为好用的PE"></a>其他我认为好用的PE</h1><p>Edgeless：强大而优雅的半开源PE工具，基于Win10的PE核心，强大的插件包，优雅的主题包，可联网PE<br>FriPE：颜值非常高，扁平化设计风格，基于Win10的PE核心，兼容Edgeless插件包，可联网PE<br>官网链接：<a href="https://home.edgeless.top/">Edgeless</a>      <a href="https://firpe.cn/">FriPE</a></p><hr><h1 id="微PE下载链接"><a href="#微PE下载链接" class="headerlink" title="微PE下载链接"></a>微PE下载链接</h1><a class="btn-beautify button--animated " href="https://firpe.cn/"   title="官网链接"><i class="fas fa-link"></i><span>官网链接</span></a><a class="btn-beautify button--animated " href="https://mirrors.sdu.edu.cn/software/Windows/WePE/WePE64_V2.2.exe"   title="64位下载"><i class="fas fa-download"></i><span>64位下载</span></a><a class="btn-beautify button--animated " href="https://mirrors.sdu.edu.cn/software/Windows/WePE/WePE32_V2.2.exe"   title="32位下载"><i class="fas fa-download"></i><span>32位下载</span></a><a class="btn-beautify button--animated " href="https://mirrors.sdu.edu.cn/software/Windows/WePE/"   title="镜像站"><i class="fas fa-link"></i><span>镜像站</span></a>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>欢迎文章</title>
+      <link href="/blog/done/"/>
+      <url>/blog/done/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="欢迎"><a href="#欢迎" class="headerlink" title="欢迎"></a>欢迎</h1><p>欢迎👏欢迎！👏热烈欢迎👏👏👏，欢迎来到LazilyCat的个人博客😊😁💕<br>这里是我的个人博客，经过我耗费18000000毫秒(5小时)的搭建，我终于把我的个人博客给搭建了起来😃<br>感谢Hexo博客模板的作者，本站采用Hexo博客模板，感谢大佬😘<br>感谢国内外知名代码仓库托管平台GitHub &amp; GitHub Pages😘</p><h1 id="博客内容"><a href="#博客内容" class="headerlink" title="博客内容"></a>博客内容</h1><p>以后这个博客频道会更新一些科技相关的东西，介绍一些软件什么的，以后也会经常整活，欢迎大家多多关注我的博客🤣<br>我也经常玩游戏，所以以后也会更新一些游戏相关的东西，欢迎大家找我打游戏awa😘</p><p><img src="1.jpg" alt=""></p><hr><h1 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h1><p>你可以通过以下方式来认识我，闲着没事也可以来找我聊天awa😃</p><a class="btn-beautify button--animated " href="http://wpa.qq.com/msgrd?v=3&uin=1467596498&site=qq&menu=yes"   title="QQ"><i class="fab fa-qq"></i><span>QQ</span></a><a class="btn-beautify button--animated " href="https://space.bilibili.com/385433304"   title="Bilibili"><i class="fas fa-tv"></i><span>Bilibili</span></a><a class="btn-beautify button--animated " href="https://s.team/p/fwtg-kqht/MJVWTTHM"   title="Steam"><i class="fab fa-steam"></i><span>Steam</span></a><a class="btn-beautify button--animated " href="https://afdian.net/@LazilyCat"   title="Afdian"><i class="fas fa-dragon"></i><span>Afdian</span></a>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
